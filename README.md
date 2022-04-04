@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Important Note
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+There are 2 Branches : Main (Source code) & gh-pages(For deployment). Github Actions/Workflow are connected to gh-pages branch, hence whenever i push to gh-pages branch it will auto-deploy, but any changes in main branch(app.js,etc.) will have to be pushed and then again had to run the command "npm run deploy". I think the issue is regarding the 2 diff. branches, but not merging it as of now as i dont understand the process flow completely. So Do this in above ways.
 
 ## Available Scripts
 
