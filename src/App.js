@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 // import './App.css';
-// Import Bootstrap Here 
 
 import React, {useState, useRef, useEffect} from 'react';
 import TodoList from "./TodoList";
@@ -46,11 +45,15 @@ function App() {
   
   return (
     <>
-    <TodoList todos={todos} toggleTodo={toggleTodo}/>
-    <input ref = {todoNameRef} type="text"/>
-    <button onClick={handleAddTodo}>Add Todo</button>
-    <button onClick={handleClearTodos}>Clear Complete</button>
-    <div>{todos.filter(todo => !todo.complete).length} left to do</div>
+    <div style={{fontSize:'20px'}}> 
+      <TodoList todos={todos} toggleTodo={toggleTodo}/>
+    </div>
+    <div class="form-group">
+      <input ref = {todoNameRef} type="text" placeholder="Enter Todo Items" class="input-lg"/> &nbsp;
+      <button onClick={handleAddTodo} class="btn btn-primary">Add Todo</button> &nbsp;
+      <button onClick={handleClearTodos} class="btn btn-danger">Clear Complete</button>
+    </div>
+    <div style={{fontSize:'18px'}}>{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
   )
   //  (
