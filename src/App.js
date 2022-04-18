@@ -56,9 +56,6 @@ function App() {
     <div style={{fontSize:'18px'}}>{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
   )
-  //  (
-  //   <h1>Hello World</h1>
-  // );
 }
 
 export default App;
